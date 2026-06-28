@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>narak-ablEmotion</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🇹🇭narak-ablEmotion🇹🇭</h1>
+
+        <p>emotion creates ur RUEANG (story) na krub.</p>
+
+    <video id="camera" autoplay playsinline></video>
+<canvas id="canvas" style="display:none;"></canvas>    
+ <button id="startButton">
+            Let's Get It,krub!!
+        </button>
+        <button id="detectButton">
+            Let's Spot It,krub!!
+        </button>
+        <h2 id="emotion">
+            Your Emotion,krub :
+        </h2>
+
+        <h2 id="episodeTitle">
+            Your Episode,krub :
+             </h2>
+
+             <p id="story">
+             Your SERIES will appear here na krub..
+            </p>
+            
+            <h2 id="class">Class,krub :</h2>
+            <h2 id="spirit">Spirit,krub :</h2>
+            <h2 id="rank">Rank,krub :</h2>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
